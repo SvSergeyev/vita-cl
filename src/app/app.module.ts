@@ -12,6 +12,7 @@ import { BoardOperatorComponent } from './board-operator/board-operator.componen
 import { BoardUserComponent } from './board-user/board-user.component';
 import {FormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
+
 import {authInterceptorProviders} from './_helpers/auth.interceptor'
 
 @NgModule({

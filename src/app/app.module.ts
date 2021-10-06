@@ -12,6 +12,7 @@ import { BoardOperatorComponent } from './board-operator/board-operator.componen
 import { BoardUserComponent } from './board-user/board-user.component';
 import {FormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
+import { RouterModule } from '@angular/router';
 
 import {authInterceptorProviders} from './_helpers/auth.interceptor'
 
@@ -30,7 +31,8 @@ import {authInterceptorProviders} from './_helpers/auth.interceptor'
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule
   ],
   providers: [authInterceptorProviders],
   bootstrap: [AppComponent]

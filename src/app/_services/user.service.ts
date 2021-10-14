@@ -12,19 +12,19 @@ export class UserService {
   constructor(private http: HttpClient) { }
 
   getPublicContent(): Observable<any> {
-    return this.http.get(API_URL + 'all', {responseType: 'text'});
+    return this.http.get(API_URL + '', {responseType: 'text'});
   }
 
   getUserBoard(): Observable<any> {
-    return this.http.get(API_URL + 'user', {responseType: 'text'});
+    return this.http.get(API_URL + 'users', {responseType: 'text'});
   }
 
   getOperatorBoard(): Observable<any> {
-    return this.http.get(API_URL + 'operator', {responseType: 'text'});
+    return this.http.get(API_URL + 'operators', {responseType: 'text'});
   }
 
-  getAdminBoard(): Observable<any> {
-    return this.http.get(API_URL + 'admin', {responseType: 'text'});
+  getAdminPage(): Observable<any> {
+    return this.http.get(API_URL + 'admins', {responseType: 'json'});
   }
 
 }

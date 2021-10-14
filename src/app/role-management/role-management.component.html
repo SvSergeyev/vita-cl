@@ -1,0 +1,51 @@
+<div class="container">
+  <header class="jumbotron">
+  </header>
+  <h2>
+    <strong>Users</strong>
+  </h2>
+  <table>
+    <tr>
+      <td>id</td>
+      <td>Name</td>
+      <td>Email</td>
+      <td>Role</td>
+    </tr>
+    <tr *ngFor = "let user of users">
+      <td>{{user.id}}</td>
+      <td>{{user.name}}</td>
+      <td>{{user.email}}</td>
+      <td>
+        <a *ngFor = "let role of user['roles']">
+          {{role.name}}
+        </a>
+      </td>
+      <td>
+        <button>Assign operator</button>
+      </td>
+    </tr>
+  </table>
+
+  <h2>Operators</h2>
+  <table>
+    <tr>
+      <td>id</td>
+      <td>Name</td>
+      <td>Email</td>
+      <td>Role</td>
+    </tr>
+    <tr *ngFor = "let operator of operators">
+      <td>{{operator.id}}</td>
+      <td>{{operator.name}}</td>
+      <td>{{operator.email}}</td>
+      <td>
+        <a *ngFor = "let role of operator['roles']">
+          {{role.name}}
+        </a>
+      </td>
+      <td>
+        <button>Assign user</button>
+      </td>
+    </tr>
+  </table>
+</div>
